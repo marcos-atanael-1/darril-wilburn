@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donna Milani Luther - Imagine More. Lead Boldly. Impact Creatively.</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="emailjs-config.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav-waves.css">
+    <link rel="stylesheet" href="css/subtle-waves.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'playfair': ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        'primary': '#dc2626',      // Red (was blue)
+                        'secondary': '#ea580c',    // Orange-red
+                        'accent': '#fbbf24',       // Yellow (keep)
+                        'warm': '#fed7aa',         // Light orange/peach (keep)
+                        'tertiary': '#f97316',     // Orange
+                        'brown': '#8b4513',        // Brand brown
+                        'brown-light': '#d2b48c',  // Light brown
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter antialiased">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-accent/95 via-brown/95 via-secondary/90 to-primary/95 backdrop-blur-md transition-all duration-300" id="navbar">
+        <!-- Very Subtle Wave Bottom -->
+        <div class="absolute bottom-0 left-0 right-0 h-2 overflow-hidden">
+            <svg viewBox="0 0 1200 20" preserveAspectRatio="none" class="w-full h-full nav-wave">
+                <path d="M0,10 C300,5 600,15 900,8 C1050,6 1150,12 1200,10 L1200,20 L0,20 Z" fill="rgba(139,69,19,0.4)"></path>
+            </svg>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold font-playfair text-white hover:text-gray-100 transition-colors duration-200 drop-shadow-lg">Donna Milani Luther</a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="about.html" class="nav-link text-white hover:text-gray-200 transition-colors duration-200 font-playfair font-semibold drop-shadow-sm">About Donna</a>
+                        <a href="thinking-ways.html" class="nav-link text-white hover:text-gray-200 transition-colors duration-200 font-playfair font-semibold drop-shadow-sm">Thinking Ways</a>
+                        <a href="#connect" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">Connect</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-button text-white hover:text-gray-100 focus:outline-none focus:text-gray-100 drop-shadow-sm">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-gradient-to-r from-warm to-accent border-t border-orange-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="about.html" class="block px-3 py-2 text-white hover:text-white/80 transition-colors duration-200 font-playfair font-semibold drop-shadow-sm">About Donna</a>
+                <a href="thinking-ways.html" class="block px-3 py-2 text-white hover:text-white/80 transition-colors duration-200 font-playfair font-semibold drop-shadow-sm">Thinking Ways</a>
+                <a href="#connect" class="block px-3 py-2 text-white font-playfair font-bold drop-shadow-sm">Connect</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen relative overflow-hidden bg-gradient-to-br from-warm/20 via-accent/10 to-secondary/20">
+        <!-- Video Background -->
+        <div class="absolute inset-0">
+            <video 
+                class="w-full h-full object-cover"
+                autoplay 
+                muted 
+                loop 
+                playsinline
+                poster=""
+            >
+                <source src="https://page.gensparksite.com/get_upload_url/180fd1ad2bf4a309ca5716099238ef9df272f86955e67ab3bac8e48ef0410f49/default/bc32da68-ca4c-43d9-8a75-47505aa9ebbd" type="video/quicktime">
+                <source src="https://page.gensparksite.com/get_upload_url/180fd1ad2bf4a309ca5716099238ef9df272f86955e67ab3bac8e48ef0410f49/default/bc32da68-ca4c-43d9-8a75-47505aa9ebbd" type="video/mp4">
+                <!-- Fallback for browsers that don't support video -->
+                <div class="w-full h-full bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500 flex items-center justify-center">
+                    <div class="text-center text-white/60">
+                        <i class="fas fa-play-circle text-8xl mb-4"></i>
+                        <p class="text-xl font-medium">Your browser doesn't support video</p>
+                    </div>
+                </div>
+            </video>
+            <!-- Video overlay for text readability -->
+            <div class="absolute inset-0 bg-black/30"></div>
+        </div>
+        
+        <!-- Hero Text Container - Positioned at bottom to avoid covering face -->
+        <div class="absolute bottom-0 left-0 right-0 pb-32">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <!-- Main Headline -->
+                <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" class="mb-12">
+                    <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold font-playfair leading-tight" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.7), 0 0 20px rgba(0,0,0,0.5);">
+                        <span class="text-accent">Imagine</span> <span class="text-white">•</span> 
+                        <span class="text-secondary">Create</span> <span class="text-white">•</span> 
+                        <span class="text-primary">Impact</span>
+                    </h1>
+                </div>
+                
+                <!-- Call to Action Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
+                    <a href="#connect" class="bg-white text-primary px-10 py-4 rounded-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                        Let's Connect
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="#about" class="bg-white/20 text-white border border-white/40 px-6 py-3 rounded-lg hover:bg-white/30 hover:scale-102 transition-all duration-300 font-playfair font-medium shadow-sm">
+                        Learn More
+                        <i class="fas fa-chevron-down ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div class="w-6 h-10 border-2 border-white/60 rounded-full flex justify-center">
+                <div class="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subtle Wave Transition Hero to About -->
+    <div class="relative h-16 bg-gradient-to-b from-warm/20 to-transparent" data-aos="fade-in" data-aos-duration="600">
+        <svg viewBox="0 0 1200 80" preserveAspectRatio="none" class="absolute top-0 w-full h-full gentle-wave">
+            <path d="M0,0 C350,20 650,40 950,30 C1075,25 1150,15 1200,20 L1200,0 Z" fill="rgba(251,191,36,0.15)"></path>
+            <path d="M0,0 C450,35 750,45 1200,30 L1200,0 Z" fill="rgba(249,115,22,0.1)"></path>
+        </svg>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="min-h-screen flex items-center py-20 bg-white relative paint-bleed">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8" >
+                    <div>
+                        <h2 class="text-5xl md:text-6xl font-bold font-playfair text-gray-900 mb-6">
+                            From Head of School to 
+                            <span class="text-secondary">Heart of a Movement</span>
+                        </h2>
+                        
+                        <p class="text-lg text-gray-600 leading-relaxed mb-8">
+                            Donna led one of the nation's most innovative Montessori-based schools for 3 decades. Now she shares her energy and expertise with schools, nonprofits, and foundations to spark student voice, deepen belonging, and fuel transformation at scale.
+                        </p>
+                        
+                        <p class="text-lg text-gray-600 leading-relaxed mb-8">
+                            Her approach combines decades of educational leadership with a deep understanding of creative learning environments, helping organizations reimagine what's possible when we put imagination and belonging at the center of everything we do.
+                        </p>
+                    </div>
+
+                    
+                    <a href="#impact" class="inline-flex items-center text-primary font-semibold hover:text-blue-800 transition-colors duration-200">
+                       Discover Donna's Impact 
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <div class="relative" data-aos="fade-left">
+                    <!-- Placeholder for Donna's Image -->
+                    <div class="relative">
+                        <div class="aspect-[4/5] rounded-2xl shadow-2xl overflow-hidden">
+                            <img 
+                                src="images/donna-professional new.jpeg" 
+                                alt="Donna Milani Luther - Professional portrait showcasing her warm, confident leadership style"
+                                class="w-full h-full object-cover"
+                                style="object-position: center;"
+                                loading="eager"
+                            >
+                        </div>
+                        
+                        <!-- Decorative Elements -->
+                        <div class="absolute -top-4 -right-4 w-24 h-24 bg-accent/20 rounded-full blur-xl"></div>
+                        <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-primary/20 rounded-full blur-xl"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subtle Wave Transition About to Impact -->
+    <div class="relative h-16 bg-gradient-to-b from-white to-transparent" data-aos="fade-in" data-aos-duration="600">
+        <svg viewBox="0 0 1200 80" preserveAspectRatio="none" class="absolute bottom-0 w-full h-full subtle-wave">
+            <path d="M0,80 C300,60 600,40 900,50 C1050,55 1150,65 1200,60 L1200,80 Z" fill="rgba(210,180,140,0.15)"></path>
+            <path d="M0,80 C400,45 800,35 1200,50 L1200,80 Z" fill="rgba(254,215,170,0.1)"></path>
+        </svg>
+    </div>
+
+    <!-- Impact Section -->
+    <section id="impact" class="min-h-screen flex items-center py-20 bg-gradient-to-br from-brown-light/25 via-warm/35 to-accent/25 relative paint-bleed">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-5xl md:text-6xl font-bold font-playfair text-gray-900 mb-6 relative">
+                    Donna's <span class="text-primary">Impact</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Three decades of transformational leadership, touching thousands of lives through innovative education and creative empowerment.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Impact Card 1: Inly School Students -->
+                <div class="impact-card bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden" data-aos="fade-up" data-aos-delay="50">
+                    <!-- Integrated Inly School Photo at Top -->
+                    <div class="h-32 relative overflow-hidden">
+                        <img src="images/donna-inly-school.jpg" alt="Donna working with students at Inly School" class="w-full h-full object-cover object-top opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white/60"></div>
+                    </div>
+                    <div class="p-8">
+                        <div class="mb-4">
+                            <div class="text-4xl font-bold text-primary mb-2">
+                                <span class="counter" data-target="2000">0</span>+
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">Students Transformed at Inly School</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">28 years as Head of School, guiding students from toddlerhood through 8th grade with her unique Montessori+ approach, integrating arts, innovation, and emotional intelligence.</p>
+                    </div>
+                </div>
+                
+                <!-- Impact Card 2: Summer Stars Camp -->
+                <div class="impact-card bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden" data-aos="fade-up" data-aos-delay="50">
+                    <!-- Integrated Summer Stars Photo at Top -->
+                    <div class="h-32 relative overflow-hidden">
+                        <img src="images/donna-summer-stars.jpg" alt="Donna with Summer Stars campers on stage" class="w-full h-full object-cover object-top opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white/60"></div>
+                    </div>
+                    <div class="p-8">
+                        <div class="mb-4">
+                            <div class="text-4xl font-bold text-primary mb-2">
+                                <span class="counter" data-target="3000">0</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">Youth Served Through Summer Stars</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">25 years as Founding Director, providing 100% tuition-free performing arts camp experiences to underserved teens, empowering them through arts and leadership.</p>
+                    </div>
+                </div>
+                
+                <!-- Impact Card 3: School Growth -->
+                <div class="impact-card bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden" data-aos="fade-up" data-aos-delay="50">
+                    <!-- Integrated School Growth Photo at Top -->
+                    <div class="h-32 relative overflow-hidden">
+                        <img src="images/donna-inly-growth.jpg" alt="Donna at Inly School groundbreaking ceremony" class="w-full h-full object-cover object-top opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white/60"></div>
+                    </div>
+                    <div class="p-8">
+                        <div class="mb-4">
+                            <div class="text-4xl font-bold text-primary mb-2">
+                                <span class="counter" data-target="140">0</span> to <span class="counter" data-target="340">0</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">Inly School Enrollment Growth</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">More than doubled enrollment while tripling campus size, building new arts and innovation facilities, and launching cutting-edge programs like the Da Vinci Studio.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Subtle Wave Transition Impact to Quote -->
+    <div class="relative h-16 bg-gradient-to-b from-brown-light/25 to-transparent" data-aos="fade-in" data-aos-duration="600">
+        <svg viewBox="0 0 1200 80" preserveAspectRatio="none" class="absolute bottom-0 w-full h-full subtle-wave">
+            <path d="M0,80 C250,55 550,45 850,60 C950,65 1100,70 1200,65 L1200,80 Z" fill="rgba(139,69,19,0.12)"></path>
+            <path d="M0,80 C350,40 700,50 1200,45 L1200,80 Z" fill="rgba(251,191,36,0.08)"></path>
+        </svg>
+    </div>
+
+    <!-- Quote Section -->
+    <section id="quote" class="py-20 bg-gradient-to-br from-brown via-brown-light to-warm/40 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-br from-brown/20 via-brown-light/15 to-accent/10 rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-1/3 right-1/3 w-48 h-48 bg-gradient-to-br from-brown-light/15 to-secondary/10 rounded-full blur-2xl animate-pulse" style="animation-delay: 2s;"></div>
+            <div class="absolute top-1/2 right-1/4 w-32 h-32 bg-gradient-to-br from-accent/15 via-brown/10 to-warm/15 rounded-full blur-xl animate-pulse" style="animation-delay: 4s;"></div>
+        </div>
+        
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Main Quote -->
+            <div class="text-center" >
+                <blockquote class="text-3xl md:text-4xl lg:text-5xl font-playfair text-white leading-relaxed mb-8 relative">
+                    <span class="absolute -top-4 -left-4 text-6xl text-white font-serif">"</span>
+                    Most of the life is in the trying. So let's create places where children—and adults—can try, imagine and grow without fear.
+                    <span class="absolute -bottom-8 -right-4 text-6xl text-white font-serif">"</span>
+                </blockquote>
+                <cite class="text-xl text-white font-medium">— Donna Milani Luther</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subtle Wave Transition Quote to Offerings -->
+    <div class="relative h-16 bg-gradient-to-b from-brown-light/30 to-transparent" data-aos="fade-in" data-aos-duration="600">
+        <svg viewBox="0 0 1200 80" preserveAspectRatio="none" class="absolute bottom-0 w-full h-full subtle-wave">
+            <path d="M0,80 C300,50 600,65 900,45 C1050,35 1150,55 1200,50 L1200,80 Z" fill="rgba(234,88,12,0.15)"></path>
+            <path d="M0,80 C450,60 750,40 1200,55 L1200,80 Z" fill="rgba(254,215,170,0.1)"></path>
+        </svg>
+    </div>
+
+    <!-- Offerings Section -->
+    <section id="offerings" class="min-h-screen flex items-center py-20 bg-gradient-to-br from-orange-50 to-red-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-bold font-playfair text-gray-900 mb-6 relative">
+                    Ways to <span class="text-accent">Create Together</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Transform your organization through speaking engagements, consulting partnerships, and leadership insights.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Speaking Card -->
+                <div class="offering-card bg-gradient-to-br from-primary/20 via-secondary/25 to-accent/30 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group overflow-hidden">
+                    <!-- Integrated Speaking Photo at Top -->
+                    <div class="h-32 relative overflow-hidden">
+                        <img src="images/donna-speaking.jpg" alt="Donna speaking to audience" class="w-full h-full object-cover object-top opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-100/60"></div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bold font-playfair text-accent mb-4">Keynotes</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Stories and strategies from three decades of leading with creativity — shared on stages from classrooms to global conferences.
+                    </p>
+                    
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-start text-gray-600">
+                            <span class="text-primary mr-3 mt-1">•</span>
+                            <span>Creative Leadership in Schools</span>
+                        </div>
+                        <div class="flex items-start text-gray-600">
+                            <span class="text-primary mr-3 mt-1">•</span>
+                            <span>Building Cultures of Belonging</span>
+                        </div>
+                        <div class="flex items-start text-gray-600">
+                            <span class="text-primary mr-3 mt-1">•</span>
+                            <span>The Art of Imaginative Leadership</span>
+                        </div>
+                    </div>
+                    
+
+                    </div>
+                </div>
+                
+                <!-- Consulting Card -->
+                <div class="offering-card bg-gradient-to-br from-brown-light/30 via-tertiary/35 to-brown/25 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group overflow-hidden">
+                    <!-- Integrated Consulting Photo at Top -->
+                    <div class="h-32 relative overflow-hidden">
+                        <img src="images/donna-consulting.jpg" alt="Donna in consulting session" class="w-full h-full object-cover object-top opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-red-100/60"></div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bold font-playfair text-secondary mb-4">Creative Leadership Partnerships</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Guiding schools, educators, and organizations to infuse creativity, courage, and possibility into their culture.
+                    </p>
+                    
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-start text-gray-600">
+                            <span class="text-secondary mr-3 mt-1">•</span>
+                            <span>Organizational Culture Assessment</span>
+                        </div>
+                        <div class="flex items-start text-gray-600">
+                            <span class="text-secondary mr-3 mt-1">•</span>
+                            <span>Leadership Development Programs</span>
+                        </div>
+                        <div class="flex items-start text-gray-600">
+                            <span class="text-secondary mr-3 mt-1">•</span>
+                            <span>Learning Environment Design</span>
+                        </div>
+                    </div>
+                    
+
+                    </div>
+                </div>
+                
+                <!-- Insights Card -->
+                <div class="offering-card bg-gradient-to-br from-accent/30 via-warm/35 to-secondary/25 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group overflow-hidden">
+                    <!-- Integrated Leadership Photo at Top -->
+                    <div class="h-32 relative overflow-hidden">
+                        <img src="images/donna-leadership.jpg" alt="Donna in leadership development session" class="w-full h-full object-cover object-top opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-yellow-100/60"></div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bold font-playfair text-primary mb-4">Tools for Transformation</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Resources and frameworks to support organizational transformation and creative leadership development.
+                    </p>
+                    
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-start text-gray-600">
+                            <span class="text-accent mr-3 mt-1">•</span>
+                            <span>Monthly Leadership Insights</span>
+                        </div>
+                        <div class="flex items-start text-gray-600">
+                            <span class="text-accent mr-3 mt-1">•</span>
+                            <span>Practical Implementation Tools</span>
+                        </div>
+                        <div class="flex items-start text-gray-600">
+                            <span class="text-accent mr-3 mt-1">•</span>
+                            <span>Case Studies & Success Stories</span>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subtle Wave Transition Offerings to Testimonials -->
+    <div class="relative h-16 bg-gradient-to-b from-orange-50 to-transparent" data-aos="fade-in" data-aos-duration="600">
+        <svg viewBox="0 0 1200 80" preserveAspectRatio="none" class="absolute bottom-0 w-full h-full subtle-wave">
+            <path d="M0,80 C200,65 500,40 800,55 C950,60 1100,50 1200,60 L1200,80 Z" fill="rgba(139,69,19,0.18)"></path>
+            <path d="M0,80 C400,45 800,60 1200,40 L1200,80 Z" fill="rgba(210,180,140,0.12)"></path>
+        </svg>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="min-h-screen flex items-center py-20 bg-gradient-to-br from-brown/15 via-brown-light/30 to-secondary/20 relative paint-bleed">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-bold font-playfair text-gray-900 mb-6">
+                    What People Are <span class="text-secondary">Saying</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Hear from educators, leaders, and organizations who have been transformed by Donna's approach.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img 
+                                src="https://page.gensparksite.com/v1/base64_upload/0595d4d59f7ad75bead698d7103af668" 
+                                alt="Peter H. Reynolds - Author" 
+                                class="w-full h-full object-cover"
+                            >
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Peter H. Reynolds</h4>
+                            <p class="text-gray-600 text-sm">New York Times Best Selling Author</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-700 leading-relaxed">
+                        "Donna Milani Luther is a wise and experienced leader, who knows how to draw out the best from those around her - whether from children or adults. Donna is incredibly creative and inspirational."
+                    </blockquote>
+
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img 
+                                src="https://page.gensparksite.com/v1/base64_upload/549b0e6a4b5671d0ea38f00c388cca1f" 
+                                alt="Margie Morgan - Inly Teacher" 
+                                class="w-full h-full object-cover"
+                            >
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Margie Morgan</h4>
+                            <p class="text-gray-600 text-sm">Inly Teacher</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-700 leading-relaxed">
+                        "Donna gave me the courage to know I could do more and do better, as an educator and as a person. Her leadership style is about support, creativity, and possibility."
+                    </blockquote>
+
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4 flex-shrink-0">
+                            <img 
+                                src="images/steve-stockman.jpg" 
+                                alt="Steve Stockman - President of the Board of Trustees, Summer Stars Foundation" 
+                                class="w-full h-full object-cover object-center"
+                            >
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Steve Stockman</h4>
+                            <p class="text-gray-600 text-sm">President of the Board of Trustees, Summer Stars Foundation, Inc.</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-700 leading-relaxed">
+                        "Having been taught by her and having taught alongside her, I have learned so much from Donna. I can honestly say that she is, bar none, the best teacher I know."
+                    </blockquote>
+
+                </div>
+            </div>
+            
+            <!-- Awards Section -->
+            <div class="mt-20 text-center"  data-aos-delay="400">
+                <h3 class="text-3xl font-bold font-playfair text-gray-900 mb-8">Awards & Recognition</h3>
+                <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                    <div class="award-item">
+                        <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-award text-2xl text-accent"></i>
+                        </div>
+                        <h4 class="font-bold font-playfair text-accent mb-2 text-lg">Kennedy Center</h4>
+                        <p class="text-gray-700 text-sm leading-relaxed">Recognized for excellence in arts education integration and leadership</p>
+                    </div>
+                    <div class="award-item">
+                        <div class="w-16 h-16 bg-brown/10 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-trophy text-2xl text-secondary"></i>
+                        </div>
+                        <h4 class="font-bold font-playfair text-secondary mb-2 text-lg">Creative Education Foundation</h4>
+                        <p class="text-gray-700 text-sm leading-relaxed">Distinguished Service Award for contributions to creative education</p>
+                    </div>
+                    <div class="award-item">
+                        <div class="w-16 h-16 bg-tertiary/10 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-medal text-2xl text-primary"></i>
+                        </div>
+                        <h4 class="font-bold font-playfair text-primary mb-2 text-lg">Notre Dame Academy</h4>
+                        <p class="text-gray-700 text-sm leading-relaxed">Woman of Achievement Award recognized outstanding leadership</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subtle Wave Transition Testimonials to Organizations -->
+    <div class="relative h-16 bg-gradient-to-b from-brown/15 to-transparent" data-aos="fade-in" data-aos-duration="600">
+        <svg viewBox="0 0 1200 80" preserveAspectRatio="none" class="absolute bottom-0 w-full h-full subtle-wave">
+            <path d="M0,80 C350,45 650,60 950,40 C1075,35 1150,50 1200,45 L1200,80 Z" fill="rgba(254,215,170,0.2)"></path>
+            <path d="M0,80 C500,55 900,35 1200,50 L1200,80 Z" fill="rgba(251,191,36,0.1)"></path>
+        </svg>
+    </div>
+
+    <!-- Organizations and Friends Section -->
+    <section id="organizations" class="py-20 bg-gradient-to-br from-brown-light/20 via-warm/30 to-accent/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" >
+                <h2 class="text-4xl md:text-5xl font-bold font-playfair text-gray-900 mb-4">
+                    Donna's <span class="text-accent">World</span>
+                </h2>
+                <p class="text-xl text-gray-600">Organizations and Friends</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Summer Stars -->
+                <div class="bg-gradient-to-br from-brown-light/20 via-accent/30 to-warm/40 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"  >
+                    <div class="flex items-center mb-6">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mr-4 flex-shrink-0 shadow-md overflow-hidden">
+                            <img src="images/summer-stars-logo.png" alt="Summer Stars Logo" class="w-18 h-18 object-cover scale-110">
+                        </div>
+                        <h3 class="text-2xl font-bold font-playfair text-gray-900">Summer Stars</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        Summer Stars Camp for the Performing Arts provides high quality, engaging arts programming, which transforms the lives of our 12-17 year old campers from underserved communities, by giving them the opportunity to discover themselves and their unique potential through the arts.
+                    </p>
+                    <a href="https://summerstars.org" target="_blank" rel="noopener noreferrer" class="inline-block bg-accent text-white px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                        Learn More
+                    </a>
+                </div>
+                
+                <!-- Reynolds TLC Center -->
+                <div class="bg-gradient-to-br from-warm/30 via-secondary/20 to-brown-light/30 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"  >
+                    <div class="flex items-center mb-6">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mr-4 flex-shrink-0 shadow-md overflow-hidden">
+                            <img src="images/reynolds-tlc-logo.png" alt="Reynolds TLC Center Logo" class="w-18 h-18 object-cover">
+                        </div>
+                        <h3 class="text-2xl font-bold font-playfair text-gray-900">Reynolds TLC Center</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        The Reynolds Center for Teaching, Learning and Creativity encourages innovation in education. Founded by Paul and Peter H. Reynolds, we bridge traditional educational silos to develop progressive pedagogical approaches that help all learners gain the vision, confidence, and skills to move their lives and communities forward.
+                    </p>
+                    <a href="https://www.reynoldstlc.org/" target="_blank" rel="noopener noreferrer" class="inline-block bg-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subtle Wave Transition Organizations to Connect -->
+    <div class="relative h-16 bg-gradient-to-b from-warm/30 to-transparent" data-aos="fade-in" data-aos-duration="600">
+        <svg viewBox="0 0 1200 80" preserveAspectRatio="none" class="absolute bottom-0 w-full h-full gentle-wave">
+            <path d="M0,80 C300,50 600,70 900,30 C1050,20 1150,60 1200,40 L1200,80 Z" fill="rgba(251,191,36,0.2)"></path>
+            <path d="M0,80 C450,40 750,80 1200,60 L1200,80 Z" fill="rgba(234,88,12,0.15)"></path>
+        </svg>
+    </div>
+
+    <!-- Connect Section -->
+    <section id="connect" class="min-h-screen flex items-center py-20 bg-gradient-to-br from-accent via-tertiary to-primary relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-1/4 right-1/4 w-64 h-64 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-1/4 left-1/4 w-80 h-80 bg-white/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16" >
+                <h2 class="text-5xl md:text-6xl font-bold font-playfair text-white mb-6">
+                    Let's Build Something <span class="text-yellow-300">Brave Together</span>
+                </h2>
+                <p class="text-xl text-orange-100 max-w-3xl mx-auto mb-12">
+                    Ready to transform your organization through creative leadership and innovative thinking? Let's start a conversation about what's possible.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Contact Form -->
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl" >
+                    <h3 class="text-2xl font-bold text-white mb-6">Send a Message</h3>
+                    <form class="space-y-4" id="contact-form">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" id="first-name" name="first-name" placeholder="First Name" required class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-white/50">
+                            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-white/50">
+                        </div>
+                        <input type="email" id="email" name="email" placeholder="Email Address" required class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-white/50">
+                        <input type="text" id="organization" name="organization" placeholder="Organization" class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-white/50">
+                        <select id="interest" name="interest" class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-white/50">
+                            <option value="" class="text-gray-900">I'm interested in...</option>
+                            <option value="speaking" class="text-gray-900">Speaking & Keynotes</option>
+                            <option value="consulting" class="text-gray-900">Consulting</option>
+                            <option value="insights" class="text-gray-900">Insights & Resources</option>
+                            <option value="other" class="text-gray-900">Other</option>
+                        </select>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell me about your vision and how I might support your work..." required class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-white/50 resize-none"></textarea>
+                        
+                        <button type="submit" class="w-full bg-white text-primary py-4 rounded-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg" id="submit-button">
+                            Send Message
+                            <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                        
+                        <!-- Status Messages -->
+                        <div id="form-status" class="hidden p-4 rounded-lg text-center"></div>
+                    </form>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="space-y-8" data-aos="fade-left">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-6">Get in Touch</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center text-orange-100">
+                                <i class="fas fa-envelope text-xl mr-4"></i>
+                                <span>donnamilaniluther@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-4">Connect on Social</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://www.linkedin.com/in/donna-luther-485786251/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors duration-200">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.instagram.com/donnamilaniluther/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors duration-200">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-primary via-secondary to-tertiary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold font-playfair mb-4">Donna Milani Luther</h3>
+                    <p class="text-orange-200 leading-relaxed">
+                        Transforming education through creative leadership, innovative thinking, and authentic connection.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="about.html" class="block text-orange-200 hover:text-white transition-colors duration-200">About Donna</a>
+                        <a href="thinking-ways.html" class="block text-orange-200 hover:text-white transition-colors duration-200">Thinking Ways</a>
+                        <a href="#connect" class="block text-orange-200 hover:text-white transition-colors duration-200">Connect</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Stay Connected</h4>
+                    <p class="text-orange-200 mb-4">Join the community of creative leaders transforming education.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/donna-luther-485786251/" target="_blank" rel="noopener noreferrer" class="text-orange-200 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/donnamilaniluther/" target="_blank" rel="noopener noreferrer" class="text-orange-200 hover:text-white transition-colors duration-200">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-orange-800 pt-8 text-center">
+                <p class="text-orange-200">
+                    © 2024 Donna Milani Luther. All rights reserved. | 
+                    <a href="#" class="hover:text-white transition-colors duration-200">Privacy Policy</a> | 
+                    <a href="#" class="hover:text-white transition-colors duration-200">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

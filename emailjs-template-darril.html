@@ -1,0 +1,173 @@
+<!-- Template HTML Personalizado para EmailJS - Darril Wilburn -->
+<!-- Copie este código completo para o Template Editor no EmailJS (modo código) -->
+
+<div style="font-family: system-ui, sans-serif, Arial; font-size: 14px; max-width: 600px; margin: 0 auto; background-color: #f8f9fa; padding: 20px;">
+  <!-- Cabeçalho -->
+  <div style="background: linear-gradient(135deg, #1B365D 0%, #CC0000 100%); color: white; padding: 25px; text-align: center; border-radius: 10px 10px 0 0; margin-bottom: 0;">
+    <h1 style="margin: 0; font-size: 24px; font-weight: 600;">📧 New Leadership Inquiry</h1>
+    <p style="margin: 10px 0 0 0; opacity: 0.9; font-size: 16px;">Contact Form - Darril Wilburn Leadership Development</p>
+  </div>
+
+  <!-- Conteúdo Principal -->
+  <div style="background: white; padding: 30px; border-radius: 0 0 10px 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+    
+    <!-- Mensagem Introdutória -->
+    <div style="margin-bottom: 25px; padding: 15px; background-color: #e8f5e8; border-left: 4px solid #CC0000; border-radius: 5px;">
+      <p style="margin: 0; color: #1B365D; font-size: 16px;">A new leadership development inquiry has been received from <strong>{{first_name}} {{last_name}}</strong>. Please respond as soon as possible.</p>
+    </div>
+
+    <!-- Informações do Contato -->
+    <div style="margin: 25px 0; padding: 20px 0; border-width: 1px 0; border-style: dashed; border-color: #e0e0e0;">
+      <table role="presentation" style="width: 100%; border-collapse: collapse;">
+        
+        <!-- First Name -->
+        <tr>
+          <td style="vertical-align: top; padding-bottom: 15px;">
+            <div style="padding: 8px 12px; margin: 0 15px 0 0; background-color: #e8f5e8; border-radius: 8px; font-size: 20px; display: inline-block;" role="img">👤</div>
+          </td>
+          <td style="vertical-align: top; padding-bottom: 15px;">
+            <div style="color: #1B365D; font-size: 14px; font-weight: 600; margin-bottom: 3px;">FIRST NAME</div>
+            <div style="color: #333; font-size: 18px; font-weight: 500;">{{first_name}}</div>
+          </td>
+        </tr>
+
+        <!-- Last Name -->
+        <tr>
+          <td style="vertical-align: top; padding-bottom: 15px;">
+            <div style="padding: 8px 12px; margin: 0 15px 0 0; background-color: #e8f5e8; border-radius: 8px; font-size: 20px; display: inline-block;" role="img">👤</div>
+          </td>
+          <td style="vertical-align: top; padding-bottom: 15px;">
+            <div style="color: #1B365D; font-size: 14px; font-weight: 600; margin-bottom: 3px;">LAST NAME</div>
+            <div style="color: #333; font-size: 18px; font-weight: 500;">{{last_name}}</div>
+          </td>
+        </tr>
+
+        <!-- Email -->
+        <tr>
+          <td style="vertical-align: top; padding-bottom: 15px;">
+            <div style="padding: 8px 12px; margin: 0 15px 0 0; background-color: #e3f2fd; border-radius: 8px; font-size: 20px; display: inline-block;" role="img">📧</div>
+          </td>
+          <td style="vertical-align: top; padding-bottom: 15px;">
+            <div style="color: #1B365D; font-size: 14px; font-weight: 600; margin-bottom: 3px;">EMAIL</div>
+            <div style="color: #CC0000; font-size: 16px;"><a href="mailto:{{email}}" style="color: #CC0000; text-decoration: none;">{{email}}</a></div>
+          </td>
+        </tr>
+
+        <!-- Company/Organization -->
+        <tr>
+          <td style="vertical-align: top; padding-bottom: 15px;">
+            <div style="padding: 8px 12px; margin: 0 15px 0 0; background-color: #fff3e0; border-radius: 8px; font-size: 20px; display: inline-block;" role="img">🏢</div>
+          </td>
+          <td style="vertical-align: top; padding-bottom: 15px;">
+            <div style="color: #1B365D; font-size: 14px; font-weight: 600; margin-bottom: 3px;">COMPANY/ORGANIZATION</div>
+            <div style="color: #D4AF37; font-size: 16px;">{{company}}</div>
+          </td>
+        </tr>
+
+        <!-- Phone -->
+        <tr>
+          <td style="vertical-align: top; padding-bottom: 15px;">
+            <div style="padding: 8px 12px; margin: 0 15px 0 0; background-color: #f3e5f5; border-radius: 8px; font-size: 20px; display: inline-block;" role="img">📞</div>
+          </td>
+          <td style="vertical-align: top; padding-bottom: 15px;">
+            <div style="color: #1B365D; font-size: 14px; font-weight: 600; margin-bottom: 3px;">PHONE</div>
+            <div style="color: #8B8680; font-size: 16px;">{{phone}}</div>
+          </td>
+        </tr>
+
+        <!-- Interest/Service -->
+        <tr>
+          <td style="vertical-align: top; padding-bottom: 15px;">
+            <div style="padding: 8px 12px; margin: 0 15px 0 0; background-color: #fce4ec; border-radius: 8px; font-size: 20px; display: inline-block;" role="img">🎯</div>
+          </td>
+          <td style="vertical-align: top; padding-bottom: 15px;">
+            <div style="color: #1B365D; font-size: 14px; font-weight: 600; margin-bottom: 3px;">PRIMARY INTEREST</div>
+            <div style="color: #CC0000; font-size: 16px; font-weight: 600;">{{interest}}</div>
+          </td>
+        </tr>
+
+        <!-- Timeline -->
+        <tr>
+          <td style="vertical-align: top; padding-bottom: 15px;">
+            <div style="padding: 8px 12px; margin: 0 15px 0 0; background-color: #e1f5fe; border-radius: 8px; font-size: 20px; display: inline-block;" role="img">⏰</div>
+          </td>
+          <td style="vertical-align: top; padding-bottom: 15px;">
+            <div style="color: #1B365D; font-size: 14px; font-weight: 600; margin-bottom: 3px;">PREFERRED TIMELINE</div>
+            <div style="color: #1B365D; font-size: 16px;">{{timeline}}</div>
+          </td>
+        </tr>
+
+      </table>
+    </div>
+
+    <!-- Mensagem -->
+    <div style="margin: 25px 0;">
+      <div style="color: #1B365D; font-size: 16px; font-weight: 600; margin-bottom: 15px; display: flex; align-items: center;">
+        <span style="padding: 8px 12px; margin-right: 10px; background-color: #e8f5e8; border-radius: 8px; font-size: 20px;" role="img">💬</span>
+        MESSAGE ABOUT ORGANIZATION & GOALS
+      </div>
+      <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #1B365D; font-size: 16px; line-height: 1.6; color: #333;">
+        {{message}}
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div style="margin: 30px 0; text-align: center; padding: 20px; background-color: #f5f5f5; border-radius: 10px;">
+      <h3 style="color: #1B365D; margin: 0 0 15px 0;">Quick Actions</h3>
+      <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+        <a href="mailto:{{email}}" style="background: #CC0000; color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; font-weight: 600; display: inline-block;">📧 Reply</a>
+        <a href="tel:{{phone}}" style="background: #1B365D; color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; font-weight: 600; display: inline-block;">📞 Call</a>
+      </div>
+    </div>
+
+    <!-- Footer Info -->
+    <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e0e0e0; text-align: center; color: #8B8680; font-size: 12px;">
+      <p style="margin: 0;">This message was sent via the Darril Wilburn Leadership Development website contact form.</p>
+      <p style="margin: 5px 0 0 0;">Sent to: d.wilburn@honsha.org</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- 
+=== CONFIGURAÇÕES PARA O EMAILJS - DARRIL WILBURN ===
+
+SUBJECT (Email Subject):
+New Leadership Inquiry from {{first_name}} {{last_name}} - {{company}}
+
+TO EMAIL (Recipient):
+d.wilburn@honsha.org
+
+VARIABLES USED:
+✅ {{first_name}} - First name
+✅ {{last_name}} - Last name  
+✅ {{email}} - Email address
+✅ {{company}} - Company/Organization
+✅ {{phone}} - Phone number
+✅ {{interest}} - Primary interest/service
+✅ {{timeline}} - Preferred timeline
+✅ {{message}} - Message about organization & goals
+
+INSTRUCTIONS:
+1. Copy ALL this code
+2. In EmailJS Dashboard → Email Templates → Your Template
+3. Click "Code" (code mode)
+4. Paste this complete code
+5. Set Subject as: New Leadership Inquiry from {{first_name}} {{last_name}} - {{company}}
+6. Save the template
+
+BRAND COLORS USED:
+✅ Deep Navy: #1B365D (headings, primary text)
+✅ Red: #CC0000 (accent, CTA buttons)
+✅ Gold: #D4AF37 (company field)
+✅ Warm Gray: #8B8680 (secondary text)
+✅ Light Gray: #F5F5F5 (backgrounds)
+
+INCLUDED FEATURES:
+✅ Professional leadership development branding
+✅ Organized layout with clear sections
+✅ Action buttons (reply/call)
+✅ Email-optimized responsive design
+✅ Compatible with all email clients
+✅ Darril Wilburn brand colors and styling
+-->

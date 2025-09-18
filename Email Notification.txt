@@ -1,0 +1,16 @@
+############# Gmail #################
+Email: formsdarrilwilburn@gmail.com
+Senha: 2YxHp7oyR5yKi$E^5m^L
+
+
+############# Conta EmailJs #############
+Email: formsdarrilwilburn@gmail.com
+Senha: 5@kescaFkL!CZ44PJ!EE
+
+
+############# EmailJs Configuraões #############
+
+Public Key: C0qMQbHPa6WgbFsOo
+Private Key: aPCnG6ah0DU-dUGfJas7b
+Service ID: service_rzoqy7v
+Template ID: template_hntbn89
